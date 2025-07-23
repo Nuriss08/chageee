@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bring Your Own Cup</title>
+  <link rel="stylesheet" href="style-chagee.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .overlay h1 {
+      font-size: 3em;
+    }
+
+    .overlay p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      background: #4caf50;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background: #3e8e41;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 20px;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    .section {
+      position: relative;
+      background: linear-gradient(to bottom, #e9f5e7, #ffffff);
+      color: #333;
+      padding: 80px 30px;
+      text-align: center;
+      z-index: 1;
+      border-top: 2px solid #cde7c7;
+    }
+
+    .section .content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      color: #2e4d3a;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #4caf50;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .section p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    footer {
+      background: #2e4d3a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+      body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: 15px 0;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .dropdown-content a {
+      color: black;
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: maroon;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(5px);
+    }
+  </style>
+</head>
+<body>
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+
+       <div class="overlay"></div>
+
+  <header class="hero">
+    <nav class="navbar">
+      <img src="logo chagee4.png" alt="CHAGEE image">
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="map.html">BRANCHES</a></li>
+
+        <!-- 🔽 About Us Dropdown -->
+        <li class="dropdown">
+          <a href="#">CAMPAIGN</a>
+          <div class="dropdown-content">
+            <a href="byc.html">Bring Your Own Cup</a>
+            <a href="tea for trees.html">Tea for Trees</a>
+          </div>
+        </li>
+
+        
+        <li><a href="game.html">GAME</a></li>
+         <li><a href="join us.html">JOIN US</a></li>
+         <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Background video styling */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* dark overlay for contrast */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .overlay h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .overlay p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    .cta-button {
+      margin-top: 30px;
+      background: #4caf50;
+      border: none;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background: #3e8e41;
+    }
+
+    footer {
+      position: relative;
+      background: #2e4d3a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Background Video -->
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="bring your own cup.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="overlay">
+    <h1>🥤 Bring Your Own Cup Campaign</h1>
+    <p>Small action, big impact — sip sustainably with ChaGee.</p>
+    <button class="cta-button" onclick="alert('Thank you for supporting sustainable sipping!')">Join the BYOC Movement</button>
+
+    <div class="scroll-indicator" onclick="document.querySelector('.about').scrollIntoView({ behavior: 'smooth' })">
+      ⬇
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section about">
+    <div class="content">
+      <h2>About the Campaign</h2>
+      <p>
+        ChaGee’s “Bring Your Own Cup” campaign encourages customers to bring reusable cups when ordering drinks. It’s our way of reducing waste and promoting eco-friendly habits in the community.
+      </p>
+      <p>
+        By using your own cup, you help reduce plastic pollution, landfill waste, and the energy used in making disposable containers. It’s a simple way to care for the planet — one sip at a time.
+      </p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="content">
+      <h2>🌱 How It Works</h2>
+      <p>1️⃣ Bring your own reusable cup when ordering at any participating ChaGee store.</p>
+      <p>2️⃣ Receive a reward: a small discount, loyalty stamp, or public recognition.</p>
+      <p>3️⃣ Enjoy your favorite drinks while helping the environment!</p>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section">
+    <div class="content">
+      <h2>🌍 Benefits of BYOC</h2>
+      <p>♻ Reduces landfill waste and plastic pollution.</p>
+      <p>⚡ Saves production energy and material costs.</p>
+      <p>🌟 Promotes eco-conscious habits and community awareness.</p>
+      <p>🌿 Strengthens brand image and customer loyalty.</p>
+    </div>
+  </section>
+
+<!-- Your full text content goes here -->
+      </p>
+    </div>
+  </div>
+
+<footer class="footer">
+  <link rel="stylesheet" href="style scroll button.css" />
+  <div class="footer-content">
+
+     <div class="footer-section">
+      <h4><a href="map.html">BRANCHES</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">CAMPAIGN</a></h4>
+      <ul>
+        <li><a href="byc.html">BRING YOUR OWN CUP</a></li>
+        <li><a href="tea for trees.html">TEA FOR TREES</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="game.html">GAME</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="join us.html">JOIN US</a></h4>
+    </div>
+
+     <div class="footer-section">
+      <h4><a href="about us.html">ABOUT US</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">GET IN TOUCH</a></h4>
+      <div class="social-icons">
+        <a href="https://www.threads.com/@my.chagee"><img src="threads.png" alt="Threads" /></a>
+        <a href="https://www.instagram.com/my.chagee/"><img src="ig.webp" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@my.chagee?lang=en"><img src="tiktok.webp" alt="TikTok" /></a>
+      </div>
+    </div>
+    
+
+  <div class="footer-bottom">
+    <span><a href="#">© CHAGEE Malaysia 2025</a></span>
+    <span><a href="#">GET IN TOUCH</a> | <a href="#">PRIVACY & LEGAL</a></span>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" title="Go to top">↑</button>
+
+<script>
+  const scrollBtn = document.getElementById("scrollToTop");
+
+  window.onscroll = function () {
+    scrollBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+
+  scrollBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
+  </div>
+</body>
+</html>

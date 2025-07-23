@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sip With Chagee</title>
+  <link rel="stylesheet" href="style-chagee.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+      padding: 15px 0;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .dropdown-content a {
+      color: black;
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: maroon;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(5px);
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="vid.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay"></div>
+
+  <header class="hero">
+    <nav class="navbar">
+      <img src="logo chagee4.png" alt="CHAGEE image">
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="map.html">BRANCHES</a></li>
+
+        <!-- 🔽 About Us Dropdown -->
+        <li class="dropdown">
+          <a href="#">CAMPAIGN</a>
+          <div class="dropdown-content">
+            <a href="byc.html">Bring Your Own Cup</a>
+            <a href="tea for trees.html">Tea for Trees</a>
+          </div>
+        </li>
+
+        
+        <li><a href="game.html">GAME</a></li>
+         <li><a href="join us.html">JOIN US</a></li>
+         <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+    <div class="hero-content">
+      <h1>DRINK GREEN WITH CHAGEE</h1>
+      <p>Every sip counts | Let’s make CHAGEE a lifestyle that’s good for you — and the planet | 2025 Created for IML470</p>
+    </div>
+  </header>
+
+  <!-- Move this inside the <body> -->
+   <link rel="stylesheet" href="style about chagee.css" />
+  <div class="container">
+    <div class="left-side">
+      <img src="c 3.jpg" alt="CHAGEE image">
+    </div>
+    <div class="right-side">
+      <h2>ABOUT US</h2>
+      <p>
+        At CHAGEE, we believe in bringing tradition and innovation together — one cup at a time. Founded with a passion for premium tea culture, CHAGEE is a modern tea house inspired by century-old brewing techniques and the elegance of Chinese heritage.
+
+Our mission is simple: to offer authentic, high-quality tea beverages made from carefully selected ingredients. From signature milk teas to refreshing fruit infusions, every drink is thoughtfully crafted to deliver a unique and satisfying experience.
+
+With a strong commitment to sustainability, CHAGEE emphasizes eco-friendly packaging, responsible sourcing, and conscious consumption. We strive to create a peaceful and enjoyable space for tea lovers to relax, recharge, and sip mindfully.
+
+Join us on a journey through the art of tea — where every sip tells a story.
+
+        <!-- Your full text content goes here -->
+      </p>
+    </div>
+  </div>
+
+<footer class="footer">
+  <link rel="stylesheet" href="style scroll button.css" />
+  <div class="footer-content">
+
+     <div class="footer-section">
+      <h4><a href="map.html">BRANCHES</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">CAMPAIGN</a></h4>
+      <ul>
+        <li><a href="byc.html">BRING YOUR OWN CUP</a></li>
+        <li><a href="tea for trees.html">TEA FOR TREES</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="game.html">GAME</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="join us.html">JOIN US</a></h4>
+    </div>
+
+     <div class="footer-section">
+      <h4><a href="about us.html">ABOUT US</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">GET IN TOUCH</a></h4>
+      <div class="social-icons">
+        <a href="https://www.threads.com/@my.chagee"><img src="threads.png" alt="Threads" /></a>
+        <a href="https://www.instagram.com/my.chagee/"><img src="ig.webp" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@my.chagee?lang=en"><img src="tiktok.webp" alt="TikTok" /></a>
+      </div>
+    </div>
+    
+
+  <div class="footer-bottom">
+    <span><a href="#">© CHAGEE Malaysia 2025</a></span>
+    <span><a href="#">GET IN TOUCH</a> | <a href="#">PRIVACY & LEGAL</a></span>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" title="Go to top">↑</button>
+
+<script>
+  const scrollBtn = document.getElementById("scrollToTop");
+
+  window.onscroll = function () {
+    scrollBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+
+  scrollBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
+  </div>
+</body>
+</html>

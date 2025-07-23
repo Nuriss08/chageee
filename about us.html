@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .bg-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .overlay {
+      background-color: rgba(215, 215, 215, 0.553);
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .about-section {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #2f4f2f;
+    }
+
+    .about-section h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .about-section p {
+      font-size: 18px;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .team-member {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 64, 0, 0.15);
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: scale(1.03);
+    }
+
+    .team-member img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .member-info {
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    .member-info h3 {
+      margin: 0 0 10px;
+      color: #1a3c1a;
+    }
+
+    .member-info p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .member-info a {
+      color: #2f855a;
+      text-decoration: none;
+    }
+
+    .fa-instagram {
+      color: #E4405F;
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .team-member {
+        width: 90%;
+      }
+    }
+     body {
+      margin: 0;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      position: relative;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffcc00;
+    }
+
+    /* Dropdown */
+    .dropdown-content {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      box-shadow: 0 10px 20px rgb(9, 9, 9);
+      border-radius: 6px;
+      padding: 15px 0;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .dropdown-content a {
+      color: black;
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: maroon;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(5px);
+    }
+  </style>
+</head>
+<body>
+
+      <header class="hero">
+    <nav class="navbar">
+      <img src="logo chagee4.png" alt="CHAGEE image">
+      <ul class="nav-links">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="map.html">BRANCHES</a></li>
+
+        <!-- 🔽 About Us Dropdown -->
+        <li class="dropdown">
+          <a href="#">CAMPAIGN</a>
+          <div class="dropdown-content">
+            <a href="byc.html">Bring Your Own Cup</a>
+            <a href="tea for trees.html">Tea for Trees</a>
+          </div>
+        </li>
+
+        
+        <li><a href="game.html">GAME</a></li>
+         <li><a href="join us.html">JOIN US</a></li>
+         <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Background image using img src -->
+  <img src="about us bg.jpg" alt="Background" class="bg-image">
+
+  <div class="overlay">
+    <div class="about-section">
+      <h1>Meet the Team</h1>
+      <p>Get to know the awesome people behind our ChaGee-inspired campaign.</p>
+    </div>
+
+    <div class="team-container">
+      <!-- Member 1 -->
+      <div class="team-member">
+        <img src="mimi.jpg" alt="Team Member 1">
+        <div class="member-info">
+          <h3>Nur Syamimi binti Mohamad</h3>
+          <p><strong>ID:</strong> 2024680104</p>
+          <p>📞 +6017-9980322</p>
+          <p>✉ symimhmd@gmail.com</p>
+          <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/its.mimieyyy_/" target="blank">@its.mimieyyy</a></p>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="team-member">
+        <img src="nuriss.jpg" alt="Team Member 2">
+        <div class="member-info">
+          <h3>Nuriss Syafina binti Ahmad</h3>
+          <p><strong>ID:</strong> 2024696232</p>
+          <p>📞 +6019-8489293</p>
+          <p>✉ nurysssyafina08@gmail.com</p>
+          <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/nuryss_/" target="blank">@nuryss</a></p>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="team-member">
+        <img src="ishaq.jpg" alt="Team Member 3">
+        <div class="member-info">
+          <h3>Muhammad Ishaq bin Mohd Hussaini</h3>
+          <p><strong>ID:</strong> 2024457378</p>
+          <p>📞 +6011-64102681</p>
+          <p>✉ ishaqhussaini2001@gmail.com</p>
+          <p><i class="fab fa-instagram"></i><a href="https://www.instagram.com/ishaqhussaini3/" target="_blank">@ishaqhussaini3</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <link rel="stylesheet" href="style scroll button.css" />
+  <div class="footer-content">
+
+     <div class="footer-section">
+      <h4><a href="map.html">BRANCHES</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">CAMPAIGN</a></h4>
+      <ul>
+        <li><a href="byc.html">BRING YOUR OWN CUP</a></li>
+        <li><a href="tea for trees.html">TEA FOR TREES</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="game.html">GAME</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="join us.html">JOIN US</a></h4>
+    </div>
+
+     <div class="footer-section">
+      <h4><a href="about us.html">ABOUT US</a></h4>
+    </div>
+
+    <div class="footer-section">
+      <h4><a href="#">GET IN TOUCH</a></h4>
+      <div class="social-icons">
+        <a href="https://www.threads.com/@my.chagee"><img src="threads.png" alt="Threads" /></a>
+        <a href="https://www.instagram.com/my.chagee/"><img src="ig.webp" alt="Instagram" /></a>
+        <a href="https://www.tiktok.com/@my.chagee?lang=en"><img src="tiktok.webp" alt="TikTok" /></a>
+      </div>
+    </div>
+    
+
+  <div class="footer-bottom">
+    <span><a href="#">© CHAGEE Malaysia 2025</a></span>
+    <span><a href="#">GET IN TOUCH</a> | <a href="#">PRIVACY & LEGAL</a></span>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" title="Go to top">↑</button>
+
+<script>
+  const scrollBtn = document.getElementById("scrollToTop");
+
+  window.onscroll = function () {
+    scrollBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+
+  scrollBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+
+  </div>
+
+</body>
+</html>
